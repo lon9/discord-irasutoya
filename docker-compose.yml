@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  bot:
+    build: .
+    command: discord-irasutoya
+    environment:
+      - TOKEN=${TOKEN}

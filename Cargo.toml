@@ -1,0 +1,15 @@
+[package]
+name = "discord-irasutoya"
+version = "0.1.0"
+authors = ["lon9"]
+
+[dependencies]
+typemap = "0.3"
+reqwest = "0.8"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+
+[dependencies.serenity]
+git = "https://github.com/serenity-rs/serenity.git"
+features = ["framework", "standard_framework"]
