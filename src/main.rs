@@ -1,3 +1,4 @@
+extern crate openssl_probe;
 extern crate reqwest;
 extern crate serde;
 extern crate typemap;
@@ -81,6 +82,7 @@ command!(irasutoya(ctx, msg, args){
 });
 
 fn main() {
+    openssl_probe::init_ssl_cert_env_vars();
 
     let token = env::var("TOKEN")
         .expect("Expected a token in the environment");
