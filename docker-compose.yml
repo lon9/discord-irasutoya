@@ -5,3 +5,4 @@ services:
     command: discord-irasutoya
     environment:
       - TOKEN=${TOKEN}
+    restart: always
